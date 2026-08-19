@@ -4,12 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/home.css';
 
 const links = [
-  { grade: 'Grade 1', url: 'https://drive.google.com/drive/folders/1Y8uyrEdP7XxxoFgnK6x9inkH1m__-6gm?usp=sharing', image: '/jellyfish.png' },
-  { grade: 'Grade 2', url: 'https://drive.google.com/drive/folders/1mEzY2o0IiV3JGi_y8xMz0T_u1KJBSJ-9?usp=sharing/', image: '/Panda.png' },
+  { grade: 'Grade 1', url: 'https://asikasik.my.canva.site/parts-of-computer-quiz--grade-1', image: '/jellyfish.png' },
+  { grade: 'Grade 2', url: 'https://wayground.com/join/', image: '/Panda.png' },
   { grade: 'Grade 3', url: 'https://www.typingclub.com/', image: '/Vector-Butterfly-PNG-Image-Background.png' },
   { grade: 'Grade 4', url: 'https://www.codechef.com/ide', image: '/dinosaur-egg.png' },
-  { grade: 'Grade 5', url: 'https://drive.google.com/drive/folders/1UlFmNj4fKa2HCdLpqw03Pp7ELVG9jxBz?usp=sharing', image: '/orca-whale.png' },
-  { grade: 'Grade 6', url: 'https://scratch.mit.edu/projects/1055522506/fullscreen/', image: '/shark.png' },
+  { grade: 'Grade 5', url: 'https://beinternetawesome.withgoogle.com/en_us/interland', image: '/orca-whale.png' },
+  { grade: 'Grade 6', url: 'https://encrypt-online.com/decrypt', image: '/shark.png' },
 ];
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ msg: '', type: '' });
 
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwDQIfShgZsG3xl-VxbmaJVY20yHB34RvN25JhyXNcCFrnB3oSV6vYF0MkubD9m2LH2/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby65dQ-oy0-EmI78fKpiMWll1c3jrPOY8Va00oEEmlWFXxIAuCCqSw30IWVQV6KgsZD/exec";
 
   const extractDomain = (url) => {
     const regex = /^(?:https?:\/\/)?(?:www\.)?([^\/]+)/;
@@ -29,7 +29,7 @@ const Home = () => {
 
   const handleUpload = async (e) => {
     e.preventDefault();
-    if (!file) return; // Pengecekan selectedGrade dihapus
+    if (!file || !fullName) return;
 
     if (file.size > 10 * 1024 * 1024) {
       setStatus({ msg: 'File terlalu besar! Maksimal 10MB.', type: 'danger' });
@@ -44,28 +44,35 @@ const Home = () => {
     reader.onload = async () => {
       try {
         const base64String = reader.result.split(",")[1];
-        const response = await fetch(GOOGLE_SCRIPT_URL, {
+        
+        // Perubahan Utama: mode 'no-cors' dan redirect 'follow'
+        await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
-          mode: 'cors', 
-          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          mode: 'no-cors', // Menghindari preflight error
+          cache: 'no-cache',
+          redirect: 'follow', 
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8', 
+          },
           body: JSON.stringify({
             file: base64String,
             filename: file.name,
             mimeType: file.type,
-            senderName: fullName // Pengiriman grade dihapus
+            senderName: fullName
           })
         });
 
-        const result = await response.json();
-        if (result.status === 'success') {
-          setStatus({ msg: 'Berhasil! File telah tersimpan di Drive.', type: 'success' });
-          setFullName('');
-          setFile(null);
-          setTimeout(() => setShowModal(false), 2000);
-        } else {
-          throw new Error(result.message);
-        }
+        // Karena 'no-cors' tidak bisa membaca response JSON, 
+        // kita langsung anggap sukses jika tidak masuk ke catch.
+        setStatus({ msg: 'Berhasil! File sedang diproses ke Drive.', type: 'success' });
+        setFullName('');
+        setFile(null);
+        
+        // Tutup modal otomatis
+        setTimeout(() => setShowModal(false), 2500);
+
       } catch (error) {
+        console.error("Upload error:", error);
         setStatus({ msg: 'Gagal! Cek koneksi atau script Anda.', type: 'danger' });
       } finally {
         setLoading(false);
@@ -143,7 +150,7 @@ const Home = () => {
                   setShowModal(true);
                 }}
               >
-                🚀 UPLOAD TUGAS KALIAN DI SINI
+                🚀 UPLOAD YOUR FILE IN HERE
               </Button>
             </Col>
           </Row>

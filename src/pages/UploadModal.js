@@ -8,7 +8,7 @@ const UploadModal = ({ show, handleClose }) => {
   const [status, setStatus] = useState({ msg: '', type: '' });
 
   // Ganti URL di bawah ini dengan URL Web App terbaru hasil "New Deployment" Anda
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz7KTCzxt5HoqNCNEVE-7hXxIn4m3Qnzn36RZ5M7C-jSsqTXGCAw16Hrrtyi8BzZXg/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby65dQ-oy0-EmI78fKpiMWll1c3jrPOY8Va00oEEmlWFXxIAuCCqSw30IWVQV6KgsZD/exec";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
