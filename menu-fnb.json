@@ -1,0 +1,305 @@
+{
+    "food":{
+        "name": "Makanan",
+        "data": [
+            {
+                "id": "f001",
+                "name": "Nasi Goreng Kampung",
+                "price": "25000",
+                "price_string": "Rp 25.000"
+            },
+            {
+                "id": "f002",
+                "name": "Baso Aci",
+                "price": "20000",
+                "price_string": "Rp 20.000"
+            },
+            {
+                "id": "f003",
+                "name": "Cuanki",
+                "price": "20000",
+                "price_string": "Rp 20.000"
+            },
+            {
+                "id": "f004",
+                "name": "Dimsum (3pcs)",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Ayam",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Kepiting",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Nori",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Lumpia",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Kulit Tahu",
+                        "add_price": "0"
+                    }
+                ]
+            },
+            {
+                "id": "f005",
+                "name": "Bapao (3 Pcs)",    
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Daging",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Coklat",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Keju",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Taro",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Pandan",
+                        "add_price": "0"
+                    }
+                ]
+            },
+            {
+                "id": "f006",
+                "name": "Mie",
+                "price": "13000",
+                "price_string": "Rp 13.000",
+                "options": [
+                    {
+                        "name": "Rebus",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Goreng",
+                        "add_price": "0"
+                    }
+                ]
+            },
+            {
+                "id": "f007",
+                "name": "Voucher 25k",
+                "price": "25000",
+                "price_string": "Rp 25.000"
+            }
+        ]
+    },
+    "drink":{
+        "name": "Minuman",
+        "data": [
+            {
+                "id": "d001",
+                "name": "Teh Tawar",
+                "price": "5000",
+                "price_string": "Rp 5.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d002",
+                "name": "Teh Manis",
+                "price": "7000",
+                "price_string": "Rp 7.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d003",
+                "name": "Vietnam Drip (Hot)",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "tags": [
+                    "Kopi"
+                ]
+            },
+            {
+                "id": "d004",
+                "name": "Kopi Susu Gula Aren (Ice)",
+                "price": "20000",
+                "price_string": "Rp 20.000",
+                "tags": [
+                    "Kopi"
+                ]
+            },
+            {
+                "id": "d005",
+                "name": "Matcha",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d006",
+                "name": "Chocolate",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d007",
+                "name": "Taro",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d011",
+                "name": "Dark Chocolate",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d008",
+                "name": "Air Mineral",
+                "price": "5000",
+                "price_string": "Rp 5.000"
+            },
+            {
+                "id": "d009",
+                "name": "Lemon Tea",
+                "price": "13000",
+                "price_string": "Rp 13.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "2000"
+                    }
+                ]
+            },
+            {
+                "id": "d010",
+                "name": "Thai Tea",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d013",
+                "name": "Kopi Americano",
+                "price": "15000",
+                "price_string": "Rp 15.000",
+                "options": [
+                    {
+                        "name": "Hot",
+                        "add_price": "0"
+                    },
+                    {
+                        "name": "Ice",
+                        "add_price": "3000"
+                    }
+                ]
+            },
+            {
+                "id": "d012",
+                "name": "Free Coffee",
+                "price": "10000",
+                "price_string": "Rp 10.000"
+            }
+        ]
+    },
+    "drink_addons":{
+        "name": "Mo Nambah Apa?",
+        "data": [
+            {  
+                "id": "da001",
+                "name": "Mie",
+                "price": "5000",
+                "price_string": "Rp 5.000"
+            },
+            {  
+                "id": "da002",
+                "name": "Telur",
+                "price": "4000",
+                "price_string": "Rp 4.000"
+            },
+            {  
+                "id": "da003",
+                "name": "1 Shot Espresso",
+                "price": "5000",
+                "price_string": "Rp 5.000"
+            }
+        ]
+    }
+}

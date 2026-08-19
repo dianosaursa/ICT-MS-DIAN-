@@ -1,0 +1,274 @@
+{
+    "car_wash": {
+        "name": "Cuci Mobil",
+        "data": [
+            {
+                "id": "c001",
+                "name": "Small",
+                "price": "45000",
+                "price_string": "Rp 45,000"
+            },
+            {
+                "id": "c002",
+                "name": "Medium",
+                "price": "50000",
+                "price_string": "Rp 50,000"
+            },
+            {
+                "id": "c003",
+                "name": "Large",
+                "price": "55000",
+                "price_string": "Rp 55,000"
+            },
+            {
+                "id": "c004",
+                "name": "Extra Large",
+                "price": "60000",
+                "price_string": "Rp 60,000"
+            }
+        ]
+    },
+    "car_wash_wax": {
+        "name": "Cuci Mobil Wex",
+        "data": [
+            {
+                "id": "cw001",
+                "name": "Small",
+                "price": "85000",
+                "price_string": "Rp 85,000"
+            },
+            {
+                "id": "cw002",
+                "name": "Medium",
+                "price": "90000",
+                "price_string": "Rp 90,000"
+            },
+            {
+                "id": "cw003",
+                "name": "Large",
+                "price": "95000",
+                "price_string": "Rp 95,000"
+            },
+            {
+                "id": "cw004",
+                "name": "Extra Large",
+                "price": "100000",
+                "price_string": "Rp 100,000"
+            }
+        ]
+    },
+    "motor_wash": {
+        "name": "Cuci Motor",
+        "data": [
+            {
+                "id": "m001",
+                "name": "Small",
+                "price": "15000",
+                "price_string": "Rp 15,000"
+            },
+            {
+                "id": "m002",
+                "name": "Medium",
+                "price": "20000",
+                "price_string": "Rp 20,000"
+            },
+            {
+                "id": "m003",
+                "name": "Large",
+                "price": "25000",
+                "price_string": "Rp 25,000"
+            },
+            {
+                "id": "m004",
+                "name": "Moge 250 UP",
+                "price": "100000",
+                "price_string": "Rp 100,000"
+            }
+        ]
+    },
+    "motor_wash_wax": {
+        "name": "Cuci Motor Wex",
+        "data": [
+            {
+                "id": "mw001",
+                "name": "Small",
+                "price": "45000",
+                "price_string": "Rp 45,000"
+            },
+            {
+                "id": "mw002",
+                "name": "Medium",
+                "price": "50000",
+                "price_string": "Rp 50,000"
+            },
+            {
+                "id": "mw003",
+                "name": "Large",
+                "price": "55000",
+                "price_string": "Rp 55,000"
+            },
+            {
+                "id": "mw004",
+                "name": "Moge 250 UP",
+                "price": "200000",
+                "price_string": "Rp 200,000"
+            }
+        ]
+    },
+    "detailing_body_and_glass": {
+        "name": "Detailing Body and Kaca",
+        "data": [
+            {
+                "id": "dbg001",
+                "name": "Small Exterior",
+                "price": "600000",
+                "price_string": "Rp 600,000"
+            },
+            {
+                "id": "dbg002",
+                "name": "Medium Ekterior",
+                "price": "800000",
+                "price_string": "Rp 800,000"
+            },
+            {
+                "id": "dbg003",
+                "name": "Large",
+                "price": "1000000",
+                "price_string": "Rp 1,000,000"
+            },
+            {
+                "id": "dbg004",
+                "name": "Extra Large",
+                "price": "1200000",
+                "price_string": "Rp 1,200,000"
+            }
+        ]
+    },
+    "full_detailing": {
+        "name": "Full Detailing",
+        "data": [
+            {
+                "id": "fd001",
+                "name": "Small",
+                "price": "1200000",
+                "price_string": "Rp 1,200,000"
+            },
+            {
+                "id": "fd002",
+                "name": "Medium",
+                "price": "1600000",
+                "price_string": "Rp 1,600,000"
+            },
+            {
+                "id": "fd003",
+                "name": "Large",
+                "price": "1800000",
+                "price_string": "Rp 1,800,000"
+            },
+            {
+                "id": "fd004",
+                "name": "Extra Large",
+                "price": "2000000",
+                "price_string": "Rp 2,000,000"
+            }
+        ]
+    },
+    "paket_buang_jamur": {
+        "name": "Paket Buang Jamur",
+        "data": [
+            {
+                "id": "pbj001",
+                "name": "Small",
+                "price": "300000",
+                "price_string": "Rp 300,000"
+            },
+            {
+                "id": "pbj002",
+                "name": "Medium",
+                "price": "350000",
+                "price_string": "Rp 350,000"
+            },
+            {
+                "id": "pbj003",
+                "name": "Large",
+                "price": "400000",
+                "price_string": "Rp 400,000"
+            },
+            {
+                "id": "pbj004",
+                "name": "Extra Large",
+                "price": "450000",
+                "price_string": "Rp 450,000"
+            }
+        ]
+    },
+    "interior": {
+        "name": "Interior",
+        "data": [
+            {
+                "id": "i001",
+                "name": "Small",
+                "price": "450000",
+                "price_string": "Rp 450,000"
+            },
+            {
+                "id": "i002",
+                "name": "Medium",
+                "price": "550000",
+                "price_string": "Rp 550,000"
+            },
+            {
+                "id": "i003",
+                "name": "Large",
+                "price": "650000",
+                "price_string": "Rp 650,000"
+            },
+            {
+                "id": "i004",
+                "name": "Extra Large",
+                "price": "700000",
+                "price_string": "Rp 700,000"
+            }
+        ]
+    },
+    "engine_detailing": {
+        "name": "Mesin Engine Detailing",
+        "data": [
+            {
+                "id": "ed001",
+                "name": "Small",
+                "price": "300000",
+                "price_string": "Rp 300,000"
+            },
+            {
+                "id": "ed002",
+                "name": "Medium",
+                "price": "400000",
+                "price_string": "Rp 400,000"
+            },
+            {
+                "id": "ed003",
+                "name": "Large",
+                "price": "500000",
+                "price_string": "Rp 500,000"
+            },
+            {
+                "id": "ed004",
+                "name": "Extra Large",
+                "price": "600000",
+                "price_string": "Rp 600,000"
+            }
+        ]
+    },
+    "primer_wash": {
+        "name": "Primer Wash",
+        "data": [
+            {
+                "id": "pw001",
+                "name": "All Unit",
+                "price": "350000",
+                "price_string": "Rp 350,000"
+            }
+        ]
+    }
+}

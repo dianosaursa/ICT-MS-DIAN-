@@ -1,0 +1,99 @@
+{
+    "01042024": {
+        "data":[
+            {
+                "order_num": "0001",
+                "order_items": [
+                    {
+                        "item_id": "f004",
+                        "items":[
+                            {
+                                "item_type": "Ayam",
+                                "item_price": 15000
+                            },
+                            {
+                                "item_type": "Nori",
+                                "item_price": 15000
+                            }
+                        ],
+                        "sub_total_price": 30000
+                    },
+                    {
+                        "item_id": "d001",
+                        "items":[
+                            {
+                                "item_type": "Ice",
+                                "item_price": 5000
+                            }
+                        ],
+                        "sub_total_price": 30000
+                    }
+                ],
+                "total_price": 60000
+            }
+        ]
+    },
+    "02042024": {
+        "data": [
+            {
+                "order_num": "0001",
+                "order_items": [
+                    {
+                        "item_id": "f001",
+                        "items":[
+                            {
+                                "item_type": "Ayam",
+                                "item_price": 15000
+                            },
+                            {
+                                "item_type": "Nori",
+                                "item_price": 15000
+                            }
+                        ],
+                        "total_price": 30000
+                    },
+                    {
+                        "item_id": "d001",
+                        "items":[
+                            {
+                                "item_type": "Ice",
+                                "item_price": 5000
+                            }
+                        ],
+                        "total_price": 30000
+                    }
+                ]
+            },
+            {
+                "order_num": "0002",
+                "order_items": [
+                    {
+                        "item_id": "f002",
+                        "items":[
+                            {
+                                "item_type": "Ayam",
+                                "item_price": 15000
+                            },
+                            {
+                                "item_type": "Nori",
+                                "item_price": 15000
+                            }
+                        ],
+                        "total_price": 30000
+                    },
+                    {
+                        "item_id": "d002",
+                        "items":[
+                            {
+                                "item_type": "Ice",
+                                "item_price": 5000
+                            }
+                        ],
+                        "total_price": 30000
+                    }
+                ]
+            }
+        ]
+    }
+        
+}
